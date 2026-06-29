@@ -11,10 +11,13 @@ Inspired by [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer) — but bro
 ## 🎯 Who this is for
 
 - **Complete beginners** who can use a computer and want to become an AI/ML engineer.
-- **Software engineers** pivoting into AI/ML.
+- **Software engineers** pivoting into AI/ML → **start here:** [🔁 SWE → ML/AI track](docs/swe-to-ml.md) (skips what you already know, ~3–5 months).
 - **Data analysts / scientists** who want to ship production AI systems.
 
 You do **not** need a CS/math degree. You **do** need consistency: ~10–15 hrs/week for ~6–9 months.
+
+> ### 👨‍💻 Already a software engineer?
+> Don't restart at zero. The **[SWE → ML/AI Engineer track](docs/swe-to-ml.md)** leverages your existing Python/Git/Docker/deployment skills and focuses only on what's new (ML intuition + the LLM/RAG/agent stack). It's the fastest route in.
 
 ---
 
