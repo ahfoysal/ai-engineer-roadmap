@@ -91,6 +91,7 @@ README.md                   ← you are here (SWE → AI/ML hub)
 docs/swe-to-ml.md           ← the SWE → ML/AI strategy: what to skip, leverage, watch out for
 docs/track-a-syllabus.md    ← 14-week week-by-week plan with daily tasks + deliverables
 docs/which-path.md          ← AI Engineer vs ML Engineer vs Data Scientist
+docs/glossary.md            ← every key term from all modules, in one cheat sheet
 phases/00–10                ← reference modules (deep dives, checklists, resources, projects)
 templates/                  ← runnable starter code: LLM service, RAG app, AI agent
 projects/PROJECTS.md        ← portfolio projects by difficulty

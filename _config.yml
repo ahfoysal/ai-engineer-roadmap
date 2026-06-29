@@ -1,0 +1,11 @@
+title: "SWE → AI/ML Engineer Roadmap"
+description: "A practical Software Engineer → AI/ML Engineer roadmap: skip the basics, focus on the LLM/RAG/agent stack + ML-specific production. With a 14-week syllabus, deep modules, projects, starter code, and interview prep."
+theme: jekyll-theme-cayman
+# GitHub Pages enables jekyll-relative-links by default, so links like
+# (phases/06-llms.md) resolve to the generated .html pages automatically.
+plugins:
+  - jekyll-relative-links
+exclude:
+  - templates/        # starter code — browse on GitHub, not rendered as site pages
+  - LICENSE
+  - .gitignore
