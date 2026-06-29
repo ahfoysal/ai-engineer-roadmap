@@ -1,0 +1,127 @@
+# 🧠 AI / ML Engineer Roadmap 2026
+
+> A complete, opinionated, **0 → job-ready** path to becoming an AI/ML Engineer — with checklists, weekly schedules, hands-on projects, and the best free + paid resources for every topic.
+
+Most roadmaps stop at "learn the topics." This one is built as an actual **course you can follow**: each phase has clear goals, a checklist of skills, curated resources, a build project, and a time estimate. Check the boxes as you go.
+
+Inspired by [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer) — but broader. roadmap.sh focuses mostly on the **LLM-app layer**. This roadmap covers the **full stack**: programming → math → classical ML → deep learning → LLMs → agents → MLOps → getting hired.
+
+---
+
+## 🎯 Who this is for
+
+- **Complete beginners** who can use a computer and want to become an AI/ML engineer.
+- **Software engineers** pivoting into AI/ML.
+- **Data analysts / scientists** who want to ship production AI systems.
+
+You do **not** need a CS/math degree. You **do** need consistency: ~10–15 hrs/week for ~6–9 months.
+
+---
+
+## 🗺️ The roadmap at a glance
+
+| Phase | Title | Focus | Est. time |
+|------:|-------|-------|-----------|
+| 0 | [Programming Foundations](phases/00-foundations.md) | Python, Git, CLI, SQL | 3–4 wks |
+| 1 | [Math & Statistics](phases/01-math-stats.md) | Linear algebra, calculus, probability | 3–4 wks |
+| 2 | [Data Wrangling & Analysis](phases/02-data.md) | NumPy, Pandas, EDA, visualization | 2–3 wks |
+| 3 | [Classical Machine Learning](phases/03-classical-ml.md) | scikit-learn, the core algorithms | 4–5 wks |
+| 4 | [Deep Learning](phases/04-deep-learning.md) | PyTorch, NN, CNN, RNN, training | 5–6 wks |
+| 5 | [NLP & Transformers](phases/05-nlp-transformers.md) | Tokenization, attention, BERT/GPT | 3–4 wks |
+| 6 | [LLMs & Generative AI](phases/06-llms.md) | Prompting, fine-tuning, evaluation | 3–4 wks |
+| 7 | [AI Engineering: RAG & Vector DBs](phases/07-ai-engineering-rag.md) | Embeddings, retrieval, RAG apps | 3–4 wks |
+| 8 | [AI Agents & Agentic Systems](phases/08-agents.md) | Tool use, orchestration, MCP | 3–4 wks |
+| 9 | [MLOps & Production](phases/09-mlops-production.md) | Serving, Docker, CI/CD, monitoring | 4–5 wks |
+| 10 | [Portfolio, Specialization & Interview Prep](phases/10-career.md) | Get hired | ongoing |
+
+**Total: ~6–9 months** at 10–15 hrs/week.
+
+```
+Phase 0 ── Programming ──┐
+Phase 1 ── Math/Stats ───┤
+                         ▼
+Phase 2 ── Data ──► Phase 3 ── Classical ML ──► Phase 4 ── Deep Learning
+                                                              │
+                ┌─────────────────────────────────────────────┘
+                ▼
+Phase 5 ── NLP/Transformers ──► Phase 6 ── LLMs ──► Phase 7 ── RAG ──► Phase 8 ── Agents
+                                                                              │
+                                                                              ▼
+                                              Phase 9 ── MLOps ──► Phase 10 ── Get Hired
+```
+
+---
+
+## 🛣️ Two ways to use this roadmap
+
+### Path A — "I want to be an **AI Engineer**" (LLM apps, fastest to employable)
+You build with existing models instead of training from scratch.
+> **0 → 2 → 6 → 7 → 8 → 9 → 10** (skim 1, 3, 4, 5 for intuition)
+> ~4–5 months. Best if you already code.
+
+### Path B — "I want to be an **ML Engineer / Researcher**" (train & ship models)
+You understand models deeply and can build them.
+> **0 → 1 → 2 → 3 → 4 → 5 → 6 → 9 → 10** (then 7, 8 as needed)
+> ~7–9 months. The complete foundation.
+
+Not sure? Do **Path A** first to get momentum and a job, then backfill **Path B** depth on the side. See [`docs/which-path.md`](docs/which-path.md).
+
+---
+
+## 📅 Suggested weekly schedule (sustainable pace)
+
+| Day | Focus |
+|-----|-------|
+| Mon–Tue | New concepts (video/reading) |
+| Wed–Thu | Code along + exercises |
+| Fri | Build / extend the phase project |
+| Sat | Review, flashcards, write notes |
+| Sun | Rest or light reading |
+
+> **Rule:** never let a phase be 100% theory. Every phase ships a small project. Code beats notes.
+
+---
+
+## 📂 What's in this repo
+
+```
+.
+├── README.md                ← you are here
+├── phases/                  ← one file per phase: goals, checklist, resources, project
+├── projects/PROJECTS.md     ← the portfolio projects, by difficulty
+├── resources/RESOURCES.md   ← master list of best courses, books, channels, tools
+├── interview/PREP.md        ← ML/AI interview prep (concepts + system design + behavioral)
+├── docs/which-path.md       ← AI Engineer vs ML Engineer decision guide
+└── progress.md              ← your personal progress tracker (check the boxes!)
+```
+
+---
+
+## ✅ How to track progress
+
+1. Fork / clone this repo.
+2. Open [`progress.md`](progress.md) and check boxes as you complete each topic.
+3. Commit your project work into `projects/` — that becomes your **portfolio**.
+4. At the end you'll have a green progress file + a folder of real projects to show employers.
+
+---
+
+## 🧭 Guiding principles
+
+1. **Build > watch.** A finished mediocre project teaches more than three perfect tutorials.
+2. **Just-in-time math.** Don't grind all the math up front. Learn it when a model needs it.
+3. **One model from scratch.** Implement at least one neural net and one transformer block by hand — once. Then use libraries forever.
+4. **Ship in public.** Push every project to GitHub. Write a short README for each.
+5. **Read papers early.** Even if you understand 30%. It compounds.
+
+---
+
+## 🚀 Start here
+
+👉 **[Phase 0 — Programming Foundations](phases/00-foundations.md)**
+
+> Already a strong Python dev? Take the [Phase 0 self-test](phases/00-foundations.md#self-test) — if you pass, skip to Phase 1 or 2.
+
+---
+
+*Roadmap maintained by [@ahfoysal](https://github.com/ahfoysal). PRs and suggestions welcome. ⭐ the repo if it helps.*

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Data & models (don't commit large files)
+*.csv
+*.parquet
+*.pt
+*.pth
+*.safetensors
+*.gguf
+data/
+models/
+checkpoints/
+
+# Secrets
+.env
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
