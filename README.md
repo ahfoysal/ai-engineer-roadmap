@@ -17,7 +17,7 @@ Inspired by [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer) — but bro
 You do **not** need a CS/math degree. You **do** need consistency: ~10–15 hrs/week for ~6–9 months.
 
 > ### 👨‍💻 Already a software engineer?
-> Don't restart at zero. The **[SWE → ML/AI Engineer track](docs/swe-to-ml.md)** leverages your existing Python/Git/Docker/deployment skills and focuses only on what's new (ML intuition + the LLM/RAG/agent stack). It's the fastest route in.
+> Don't restart at zero. The **[SWE → ML/AI Engineer track](docs/swe-to-ml.md)** leverages your existing Python/Git/Docker/deployment skills and focuses only on what's new (ML intuition + the LLM/RAG/agent stack). It's the fastest route in — and there's a concrete **[14-week week-by-week syllabus](docs/track-a-syllabus.md)** with daily tasks and deliverables.
 
 ---
 
@@ -39,19 +39,33 @@ You do **not** need a CS/math degree. You **do** need consistency: ~10–15 hrs/
 
 **Total: ~6–9 months** at 10–15 hrs/week.
 
+```mermaid
+flowchart TD
+    P0["Phase 0<br/>Programming"] --> P2["Phase 2<br/>Data"]
+    P1["Phase 1<br/>Math & Stats"] --> P3["Phase 3<br/>Classical ML"]
+    P2 --> P3
+    P3 --> P4["Phase 4<br/>Deep Learning"]
+    P4 --> P5["Phase 5<br/>NLP & Transformers"]
+    P5 --> P6["Phase 6<br/>LLMs & GenAI"]
+    P2 -. fast path .-> P6
+    P6 --> P7["Phase 7<br/>RAG & Vector DBs"]
+    P7 --> P8["Phase 8<br/>AI Agents"]
+    P8 --> P9["Phase 9<br/>MLOps & Production"]
+    P9 --> P10(["Phase 10<br/>Get Hired 🎉"])
+
+    classDef found fill:#1f6feb,stroke:#0b3d91,color:#fff
+    classDef core fill:#8957e5,stroke:#4b277a,color:#fff
+    classDef ai fill:#238636,stroke:#114a1b,color:#fff
+    classDef ship fill:#bb8009,stroke:#6b4900,color:#fff
+    class P0,P1,P2 found
+    class P3,P4,P5 core
+    class P6,P7,P8 ai
+    class P9,P10 ship
 ```
-Phase 0 ── Programming ──┐
-Phase 1 ── Math/Stats ───┤
-                         ▼
-Phase 2 ── Data ──► Phase 3 ── Classical ML ──► Phase 4 ── Deep Learning
-                                                              │
-                ┌─────────────────────────────────────────────┘
-                ▼
-Phase 5 ── NLP/Transformers ──► Phase 6 ── LLMs ──► Phase 7 ── RAG ──► Phase 8 ── Agents
-                                                                              │
-                                                                              ▼
-                                              Phase 9 ── MLOps ──► Phase 10 ── Get Hired
-```
+
+> **Path A (AI Engineer, fastest):** follow the dotted *fast path* — `0 → 2 → 6 → 7 → 8 → 9 → 10`.
+> **Path B (ML Engineer):** follow the solid arrows top to bottom through every phase.
+> 🟦 Foundations · 🟪 Core ML · 🟩 AI/LLM stack · 🟧 Ship & get hired
 
 ---
 
