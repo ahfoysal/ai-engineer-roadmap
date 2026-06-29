@@ -1,28 +1,32 @@
-# ✅ My Progress Tracker
+# ✅ My Progress Tracker (SWE → AI/ML Engineer)
 
-Check the box when a phase is **done** (topics learned + project shipped). Update the date. Make it green. 💪
+You're coming from software engineering, so this tracks the **two tracks**, not a from-zero sequence. Check boxes as you go. 💪
 
-> Tip: also check boxes inside each phase file as you go.
+> Detailed week-by-week tasks live in [docs/track-a-syllabus.md](docs/track-a-syllabus.md). Check those boxes too.
 
-## Phases
-- [ ] **Phase 0** — Programming Foundations · _started: ___ / done: ____
-- [ ] **Phase 1** — Math & Statistics · _started: ___ / done: ____
-- [ ] **Phase 2** — Data Wrangling & Analysis · _started: ___ / done: ____
-- [ ] **Phase 3** — Classical Machine Learning · _started: ___ / done: ____
-- [ ] **Phase 4** — Deep Learning · _started: ___ / done: ____
-- [ ] **Phase 5** — NLP & Transformers · _started: ___ / done: ____
-- [ ] **Phase 6** — LLMs & Generative AI · _started: ___ / done: ____
-- [ ] **Phase 7** — RAG & Vector DBs · _started: ___ / done: ____
-- [ ] **Phase 8** — AI Agents · _started: ___ / done: ____
-- [ ] **Phase 9** — MLOps & Production · _started: ___ / done: ____
-- [ ] **Phase 10** — Portfolio & Interview Prep · _started: ___ / done: ____
+## ⚡ Track A — AI / GenAI Engineer (do this first)
+- [ ] **Step 1** — Data fluency (Pandas/NumPy, skim) · _done: ____
+- [ ] **Step 2** — LLMs & GenAI (APIs, prompting, structured output, evals) · _done: ____
+- [ ] **Step 3** — RAG & Vector DBs · _done: ____
+- [ ] **Step 4** — AI Agents (tool use, orchestration, MCP) · _done: ____
+- [ ] **Step 5** — AI Production / LLMOps (serving, observability, cost, evals) · _done: ____
+- [ ] **Step 6** — Portfolio + interview prep + applying · _done: ____
 
-## Projects shipped (link them!)
-- [ ] Project 1 — ___
-- [ ] Project 2 — ___
-- [ ] Project 3 — ___
-- [ ] Project 4 — ___
+## 🧠 Track B — ML Engineer depth (add after Track A)
+- [ ] Math & stats (just-in-time) · _done: ____
+- [ ] Classical ML (scikit-learn, the real depth) · _done: ____
+- [ ] Deep Learning (PyTorch, train a model) · _done: ____
+- [ ] NLP & Transformers (attention, fine-tuning) · _done: ____
+
+## ✅ Foundations check (should already be true as a SWE)
+- [ ] Python · [ ] Git/GitHub · [ ] SQL/APIs · [ ] Docker · [ ] CI/CD · [ ] Cloud/deploy
+
+## 🛠️ Projects shipped (link them — this is your portfolio!)
+- [ ] LLM API service (FastAPI + structured output + evals, deployed) — ___
+- [ ] RAG "chat with your docs" (hybrid search + re-rank, deployed) — ___
+- [ ] AI agent (tool use, loop control, tracing/evals) — ___
+- [ ] Productionized flagship (Docker + CI + monitoring + live URL) — ___
 - [ ] Capstone — ___
 
-## Notes / reflections
-_Use this space to jot wins, blockers, and things to revisit._
+## 📝 Notes / reflections
+_Wins, blockers, things to revisit._

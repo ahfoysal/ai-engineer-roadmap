@@ -1,128 +1,127 @@
-# 🧠 AI / ML Engineer Roadmap 2026
+# 🔁 Software Engineer → AI / ML Engineer Roadmap (2026)
 
-> A complete, opinionated, **0 → job-ready** path to becoming an AI/ML Engineer — with checklists, weekly schedules, hands-on projects, and the best free + paid resources for every topic.
+> A focused path for **people who already ship software** and want to become an **AI/ML Engineer**. This is **not** a "learn to code from zero" roadmap — it starts from where a working developer already is and spends your time only on what's actually new.
 
-Most roadmaps stop at "learn the topics." This one is built as an actual **course you can follow**: each phase has clear goals, a checklist of skills, curated resources, a build project, and a time estimate. Check the boxes as you go.
+You already know how to write code, use Git, build APIs, ship to production, and reason about systems. That's a huge head start — the hardest part of being an **AI Engineer** (vs a researcher) is the *engineering*, and you have it. This roadmap skips what you know and goes straight to the ML/AI-specific skills.
 
-Inspired by [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer) — but broader. roadmap.sh focuses mostly on the **LLM-app layer**. This roadmap covers the **full stack**: programming → math → classical ML → deep learning → LLMs → agents → MLOps → getting hired.
-
----
-
-## 🎯 Who this is for
-
-- **Complete beginners** who can use a computer and want to become an AI/ML engineer.
-- **Software engineers** pivoting into AI/ML → **start here:** [🔁 SWE → ML/AI track](docs/swe-to-ml.md) (skips what you already know, ~3–5 months).
-- **Data analysts / scientists** who want to ship production AI systems.
-
-You do **not** need a CS/math degree. You **do** need consistency: ~10–15 hrs/week for ~6–9 months.
-
-> ### 👨‍💻 Already a software engineer?
-> Don't restart at zero. The **[SWE → ML/AI Engineer track](docs/swe-to-ml.md)** leverages your existing Python/Git/Docker/deployment skills and focuses only on what's new (ML intuition + the LLM/RAG/agent stack). It's the fastest route in — and there's a concrete **[14-week week-by-week syllabus](docs/track-a-syllabus.md)** with daily tasks and deliverables.
+**Time:** ~3–5 months at 10–15 hrs/week (AI Engineer track). Add ~2–3 months for deep ML.
 
 ---
 
-## 🗺️ The roadmap at a glance
+## ✅ Assumed knowledge (you already have this — don't relearn it)
 
-**11 phases, ~6–9 months at 10–15 hrs/week.** Click any phase to open it.
+If you can do most of these, you're the target reader. **Skip** the foundations grind.
 
-- **Phase 0 — [Programming Foundations](phases/00-foundations.md)** · Python, Git, CLI, SQL · _3–4 wks_
-- **Phase 1 — [Math & Statistics](phases/01-math-stats.md)** · Linear algebra, calculus, probability · _3–4 wks_
-- **Phase 2 — [Data Wrangling & Analysis](phases/02-data.md)** · NumPy, Pandas, EDA, visualization · _2–3 wks_
-- **Phase 3 — [Classical Machine Learning](phases/03-classical-ml.md)** · scikit-learn, the core algorithms · _4–5 wks_
-- **Phase 4 — [Deep Learning](phases/04-deep-learning.md)** · PyTorch, NN, CNN, RNN, training · _5–6 wks_
-- **Phase 5 — [NLP & Transformers](phases/05-nlp-transformers.md)** · Tokenization, attention, BERT/GPT · _3–4 wks_
-- **Phase 6 — [LLMs & Generative AI](phases/06-llms.md)** · Prompting, fine-tuning, evaluation · _3–4 wks_
-- **Phase 7 — [AI Engineering: RAG & Vector DBs](phases/07-ai-engineering-rag.md)** · Embeddings, retrieval, RAG apps · _3–4 wks_
-- **Phase 8 — [AI Agents & Agentic Systems](phases/08-agents.md)** · Tool use, orchestration, MCP · _3–4 wks_
-- **Phase 9 — [MLOps & Production](phases/09-mlops-production.md)** · Serving, Docker, CI/CD, monitoring · _4–5 wks_
-- **Phase 10 — [Portfolio, Specialization & Interview Prep](phases/10-career.md)** · Get hired · _ongoing_
+- Python (or you can pick it up fast), clean code, OOP
+- Git / GitHub, branching, PRs
+- Terminal, package management, virtual envs
+- SQL and working with APIs / JSON
+- Docker, building & deploying services
+- CI/CD, testing, logging, cloud basics
+- Reading docs, debugging, system design
 
-### Visual path
+> 🟢 **This background is your superpower.** Most ML grads ship a notebook; you can ship a tested, containerized, monitored, deployed service. Lead with that.
+
+If some of the above are shaky, the [reference modules](#-reference-modules) below cover them — dip in as needed, don't do them front-to-back.
+
+---
+
+## 🆕 What's actually new for you
+
+This is where your time goes:
+
+1. **ML intuition** — how models learn, overfitting, evaluation (not heavy math).
+2. **The LLM stack** — prompting, RAG, agents, evals. *This is the core of the AI Engineer job.*
+3. **Just-enough deep learning** — so you're not a black-box user.
+4. **ML-specific production** — model/LLM serving, drift, observability, cost, eval pipelines.
+
+---
+
+## 🛣️ The path (two tracks, both start from SWE)
+
+### ⚡ Track A — AI / GenAI Engineer  *(recommended first — fastest to hired)*
+Build products on top of models. Closest to your current skills; hottest 2026 market.
 
 ```text
-  FOUNDATIONS          CORE ML                AI / LLM STACK              SHIP
-  ───────────          ───────                ──────────────              ────
-  Phase 0 ─┐
-  Programming         Phase 3                Phase 6                   Phase 9
-           ├─► Phase 2 ─► Classical ML ─► …  LLMs ─► Phase 7 ─► Phase 8 ─► MLOps ─► Phase 10
-  Phase 1 ─┘   Data        Phase 4           (RAG)    (Agents)            Get Hired 🎉
-  Math/Stats              Deep Learning
-                          Phase 5 (NLP/Transformers)
+  Step 1   Data fluency (skim)      → Pandas/NumPy enough to handle data
+  Step 2   LLMs & GenAI             → APIs, prompting, structured output, evals
+  Step 3   RAG & Vector DBs         → the #1 hireable AI skill
+  Step 4   AI Agents                → tool use, orchestration, MCP
+  Step 5   AI Production / LLMOps    → serving, observability, cost, eval pipelines
+  Step 6   Portfolio + interviews    → ship deployed projects, get hired
+```
+**~3–4 months.** 👉 Follow the concrete plan: **[14-Week SWE→AI Engineer Syllabus](docs/track-a-syllabus.md)**
 
-  Fast path (AI Engineer):  0 ─► 2 ─► 6 ─► 7 ─► 8 ─► 9 ─► 10   (skim 1, 3, 4, 5)
-  Full path (ML Engineer):  0 ─► 1 ─► 2 ─► 3 ─► 4 ─► 5 ─► 6 ─► 9 ─► 10  (then 7, 8)
+### 🧠 Track B — ML Engineer  *(add for depth, when you want to train/own models)*
+Backfill the foundations once Track A has you building and employable.
+
+```text
+  Math (just-in-time)  →  Classical ML (real)  →  Deep Learning  →  NLP / Transformers
+```
+**+2–3 months.** You'll learn this *faster* because you're already building real things that need it.
+
+> **Recommended order:** do **Track A first** (momentum + projects + job), then layer in **Track B** depth on the side. See [docs/which-path.md](docs/which-path.md).
+
+---
+
+## 📚 Reference modules
+
+These are deep-dive modules, not a sequence to grind. Track A pulls from the 🆕 ones; tags show what to do given your SWE background.
+
+- **Module 0 — [Programming Foundations](phases/00-foundations.md)** · ✅ *you have this — skip / use as checklist*
+- **Module 1 — [Math & Statistics](phases/01-math-stats.md)** · 🔵 *skim, just-in-time (Track B)*
+- **Module 2 — [Data Wrangling & Analysis](phases/02-data.md)** · 🟡 *skim — Pandas/NumPy you'll actually use*
+- **Module 3 — [Classical Machine Learning](phases/03-classical-ml.md)** · 🔵 *Track B (real depth)*
+- **Module 4 — [Deep Learning](phases/04-deep-learning.md)** · 🔵 *Track B (real depth)*
+- **Module 5 — [NLP & Transformers](phases/05-nlp-transformers.md)** · 🔵 *Track B — understand attention*
+- **Module 6 — [LLMs & Generative AI](phases/06-llms.md)** · 🆕 **core — Track A**
+- **Module 7 — [RAG & Vector DBs](phases/07-ai-engineering-rag.md)** · 🆕 **core — Track A**
+- **Module 8 — [AI Agents & Agentic Systems](phases/08-agents.md)** · 🆕 **core — Track A**
+- **Module 9 — [MLOps & Production](phases/09-mlops-production.md)** · 🟡 *you know DevOps — add the ML/LLM-specific bits*
+- **Module 10 — [Portfolio, Specialization & Interview Prep](phases/10-career.md)** · 🎯 *get hired*
+
+**Legend:** ✅ already have · 🟡 skim/partial · 🔵 Track B depth · 🆕 core new skill · 🎯 career
+
+---
+
+## 🗂️ Repo contents
+
+```
+README.md                   ← you are here (SWE → AI/ML hub)
+docs/swe-to-ml.md           ← the SWE → ML/AI strategy: what to skip, leverage, watch out for
+docs/track-a-syllabus.md    ← 14-week week-by-week plan with daily tasks + deliverables
+docs/which-path.md          ← AI Engineer vs ML Engineer vs Data Scientist
+phases/00–10                ← reference modules (deep dives, checklists, resources, projects)
+projects/PROJECTS.md        ← portfolio projects by difficulty
+resources/RESOURCES.md      ← curated courses, books, channels, tools
+interview/PREP.md           ← ML/AI interview prep
+progress.md                 ← personal progress tracker
 ```
 
 ---
 
-## 🛣️ Two ways to use this roadmap
+## ⚡ Leverage your SWE strengths
 
-### Path A — "I want to be an **AI Engineer**" (LLM apps, fastest to employable)
-You build with existing models instead of training from scratch.
-> **0 → 2 → 6 → 7 → 8 → 9 → 10** (skim 1, 3, 4, 5 for intuition)
-> ~4–5 months. Best if you already code.
+- **Production quality is your edge.** Ship tested, Dockerized, monitored, deployed AI services — not notebooks.
+- **Build real apps.** Your portfolio should look like *software*: clean repos, CI, READMEs, live demos.
+- **Treat prompts & evals like code.** Version them, test them, regression-check them. Rare and valued.
+- **Read papers as specs.** Approach a new architecture like a new codebase.
 
-### Path B — "I want to be an **ML Engineer / Researcher**" (train & ship models)
-You understand models deeply and can build them.
-> **0 → 1 → 2 → 3 → 4 → 5 → 6 → 9 → 10** (then 7, 8 as needed)
-> ~7–9 months. The complete foundation.
+## ⚠️ SWE blind spots to watch
 
-Not sure? Do **Path A** first to get momentum and a job, then backfill **Path B** depth on the side. See [`docs/which-path.md`](docs/which-path.md).
-
----
-
-## 📅 Suggested weekly schedule (sustainable pace)
-
-- **Mon–Tue** — New concepts (video/reading)
-- **Wed–Thu** — Code along + exercises
-- **Fri** — Build / extend the phase project
-- **Sat** — Review, flashcards, write notes
-- **Sun** — Rest or light reading
-
-> **Rule:** never let a phase be 100% theory. Every phase ships a small project. Code beats notes.
-
----
-
-## 📂 What's in this repo
-
-```
-.
-├── README.md                ← you are here
-├── phases/                  ← one file per phase: goals, checklist, resources, project
-├── projects/PROJECTS.md     ← the portfolio projects, by difficulty
-├── resources/RESOURCES.md   ← master list of best courses, books, channels, tools
-├── interview/PREP.md        ← ML/AI interview prep (concepts + system design + behavioral)
-├── docs/which-path.md       ← AI Engineer vs ML Engineer decision guide
-└── progress.md              ← your personal progress tracker (check the boxes!)
-```
-
----
-
-## ✅ How to track progress
-
-1. Fork / clone this repo.
-2. Open [`progress.md`](progress.md) and check boxes as you complete each topic.
-3. Commit your project work into `projects/` — that becomes your **portfolio**.
-4. At the end you'll have a green progress file + a folder of real projects to show employers.
-
----
-
-## 🧭 Guiding principles
-
-1. **Build > watch.** A finished mediocre project teaches more than three perfect tutorials.
-2. **Just-in-time math.** Don't grind all the math up front. Learn it when a model needs it.
-3. **One model from scratch.** Implement at least one neural net and one transformer block by hand — once. Then use libraries forever.
-4. **Ship in public.** Push every project to GitHub. Write a short README for each.
-5. **Read papers early.** Even if you understand 30%. It compounds.
+- **ML is empirical, not deterministic.** "It compiles" ≠ "it works." You *evaluate*, you don't assert.
+- **Data quality dominates** — more than model choice. Get comfortable being unglamorous with data.
+- **Don't over-engineer.** Try a prompt before reaching for fine-tuning or a custom model.
+- **Don't skip all intuition.** Understand evaluation, overfitting, and how transformers work — or you'll ship confidently-broken systems.
 
 ---
 
 ## 🚀 Start here
 
-👉 **[Phase 0 — Programming Foundations](phases/00-foundations.md)**
-
-> Already a strong Python dev? Take the [Phase 0 self-test](phases/00-foundations.md#self-test) — if you pass, skip to Phase 1 or 2.
+1. Read **[docs/swe-to-ml.md](docs/swe-to-ml.md)** — the strategy (10 min).
+2. Open the **[14-Week Syllabus](docs/track-a-syllabus.md)** and start Week 1.
+3. Track yourself in **[progress.md](progress.md)** and push every project to GitHub.
 
 ---
 
-*Roadmap maintained by [@ahfoysal](https://github.com/ahfoysal). PRs and suggestions welcome. ⭐ the repo if it helps.*
+*Maintained by [@ahfoysal](https://github.com/ahfoysal). A practical path for developers moving into AI/ML. ⭐ if it helps.*

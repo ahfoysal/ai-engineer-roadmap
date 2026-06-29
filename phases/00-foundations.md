@@ -1,7 +1,9 @@
-# Phase 0 — Programming Foundations
+# Module 0 — Programming Foundations
+
+> 👨‍💻 **Coming from software engineering?** You almost certainly have this already. Use the checklist below as a quick self-audit, take the [self-test](#self-test) at the bottom, and if you pass, **skip straight to the [LLM stack (Module 6)](06-llms.md)** via [Track A](../docs/track-a-syllabus.md). Only the SQL/Python-specific gaps are worth filling in.
 
 **Goal:** Be fluent in Python and comfortable with the developer tools every AI engineer uses daily.
-**Time:** 3–4 weeks (skip parts you know).
+**Time:** SWEs: a quick skim. Newer devs: 3–4 weeks.
 
 ---
 
