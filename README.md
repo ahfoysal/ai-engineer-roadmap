@@ -23,49 +23,35 @@ You do **not** need a CS/math degree. You **do** need consistency: ~10–15 hrs/
 
 ## 🗺️ The roadmap at a glance
 
-| Phase | Title | Focus | Est. time |
-|------:|-------|-------|-----------|
-| 0 | [Programming Foundations](phases/00-foundations.md) | Python, Git, CLI, SQL | 3–4 wks |
-| 1 | [Math & Statistics](phases/01-math-stats.md) | Linear algebra, calculus, probability | 3–4 wks |
-| 2 | [Data Wrangling & Analysis](phases/02-data.md) | NumPy, Pandas, EDA, visualization | 2–3 wks |
-| 3 | [Classical Machine Learning](phases/03-classical-ml.md) | scikit-learn, the core algorithms | 4–5 wks |
-| 4 | [Deep Learning](phases/04-deep-learning.md) | PyTorch, NN, CNN, RNN, training | 5–6 wks |
-| 5 | [NLP & Transformers](phases/05-nlp-transformers.md) | Tokenization, attention, BERT/GPT | 3–4 wks |
-| 6 | [LLMs & Generative AI](phases/06-llms.md) | Prompting, fine-tuning, evaluation | 3–4 wks |
-| 7 | [AI Engineering: RAG & Vector DBs](phases/07-ai-engineering-rag.md) | Embeddings, retrieval, RAG apps | 3–4 wks |
-| 8 | [AI Agents & Agentic Systems](phases/08-agents.md) | Tool use, orchestration, MCP | 3–4 wks |
-| 9 | [MLOps & Production](phases/09-mlops-production.md) | Serving, Docker, CI/CD, monitoring | 4–5 wks |
-| 10 | [Portfolio, Specialization & Interview Prep](phases/10-career.md) | Get hired | ongoing |
+**11 phases, ~6–9 months at 10–15 hrs/week.** Click any phase to open it.
 
-**Total: ~6–9 months** at 10–15 hrs/week.
+- **Phase 0 — [Programming Foundations](phases/00-foundations.md)** · Python, Git, CLI, SQL · _3–4 wks_
+- **Phase 1 — [Math & Statistics](phases/01-math-stats.md)** · Linear algebra, calculus, probability · _3–4 wks_
+- **Phase 2 — [Data Wrangling & Analysis](phases/02-data.md)** · NumPy, Pandas, EDA, visualization · _2–3 wks_
+- **Phase 3 — [Classical Machine Learning](phases/03-classical-ml.md)** · scikit-learn, the core algorithms · _4–5 wks_
+- **Phase 4 — [Deep Learning](phases/04-deep-learning.md)** · PyTorch, NN, CNN, RNN, training · _5–6 wks_
+- **Phase 5 — [NLP & Transformers](phases/05-nlp-transformers.md)** · Tokenization, attention, BERT/GPT · _3–4 wks_
+- **Phase 6 — [LLMs & Generative AI](phases/06-llms.md)** · Prompting, fine-tuning, evaluation · _3–4 wks_
+- **Phase 7 — [AI Engineering: RAG & Vector DBs](phases/07-ai-engineering-rag.md)** · Embeddings, retrieval, RAG apps · _3–4 wks_
+- **Phase 8 — [AI Agents & Agentic Systems](phases/08-agents.md)** · Tool use, orchestration, MCP · _3–4 wks_
+- **Phase 9 — [MLOps & Production](phases/09-mlops-production.md)** · Serving, Docker, CI/CD, monitoring · _4–5 wks_
+- **Phase 10 — [Portfolio, Specialization & Interview Prep](phases/10-career.md)** · Get hired · _ongoing_
 
-```mermaid
-flowchart TD
-    P0["Phase 0<br/>Programming"] --> P2["Phase 2<br/>Data"]
-    P1["Phase 1<br/>Math & Stats"] --> P3["Phase 3<br/>Classical ML"]
-    P2 --> P3
-    P3 --> P4["Phase 4<br/>Deep Learning"]
-    P4 --> P5["Phase 5<br/>NLP & Transformers"]
-    P5 --> P6["Phase 6<br/>LLMs & GenAI"]
-    P2 -. fast path .-> P6
-    P6 --> P7["Phase 7<br/>RAG & Vector DBs"]
-    P7 --> P8["Phase 8<br/>AI Agents"]
-    P8 --> P9["Phase 9<br/>MLOps & Production"]
-    P9 --> P10(["Phase 10<br/>Get Hired 🎉"])
+### Visual path
 
-    classDef found fill:#1f6feb,stroke:#0b3d91,color:#fff
-    classDef core fill:#8957e5,stroke:#4b277a,color:#fff
-    classDef ai fill:#238636,stroke:#114a1b,color:#fff
-    classDef ship fill:#bb8009,stroke:#6b4900,color:#fff
-    class P0,P1,P2 found
-    class P3,P4,P5 core
-    class P6,P7,P8 ai
-    class P9,P10 ship
+```text
+  FOUNDATIONS          CORE ML                AI / LLM STACK              SHIP
+  ───────────          ───────                ──────────────              ────
+  Phase 0 ─┐
+  Programming         Phase 3                Phase 6                   Phase 9
+           ├─► Phase 2 ─► Classical ML ─► …  LLMs ─► Phase 7 ─► Phase 8 ─► MLOps ─► Phase 10
+  Phase 1 ─┘   Data        Phase 4           (RAG)    (Agents)            Get Hired 🎉
+  Math/Stats              Deep Learning
+                          Phase 5 (NLP/Transformers)
+
+  Fast path (AI Engineer):  0 ─► 2 ─► 6 ─► 7 ─► 8 ─► 9 ─► 10   (skim 1, 3, 4, 5)
+  Full path (ML Engineer):  0 ─► 1 ─► 2 ─► 3 ─► 4 ─► 5 ─► 6 ─► 9 ─► 10  (then 7, 8)
 ```
-
-> **Path A (AI Engineer, fastest):** follow the dotted *fast path* — `0 → 2 → 6 → 7 → 8 → 9 → 10`.
-> **Path B (ML Engineer):** follow the solid arrows top to bottom through every phase.
-> 🟦 Foundations · 🟪 Core ML · 🟩 AI/LLM stack · 🟧 Ship & get hired
 
 ---
 
@@ -87,13 +73,11 @@ Not sure? Do **Path A** first to get momentum and a job, then backfill **Path B*
 
 ## 📅 Suggested weekly schedule (sustainable pace)
 
-| Day | Focus |
-|-----|-------|
-| Mon–Tue | New concepts (video/reading) |
-| Wed–Thu | Code along + exercises |
-| Fri | Build / extend the phase project |
-| Sat | Review, flashcards, write notes |
-| Sun | Rest or light reading |
+- **Mon–Tue** — New concepts (video/reading)
+- **Wed–Thu** — Code along + exercises
+- **Fri** — Build / extend the phase project
+- **Sat** — Review, flashcards, write notes
+- **Sun** — Rest or light reading
 
 > **Rule:** never let a phase be 100% theory. Every phase ships a small project. Code beats notes.
 
