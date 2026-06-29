@@ -4,6 +4,8 @@ Projects teach more than any course. Build these, push each to GitHub with a cle
 
 > **Rule of thumb:** a portfolio of 4–5 *finished, deployed* projects beats 20 half-done tutorials.
 
+> 🧰 **Starter code:** the three core projects (LLM service, RAG app, AI agent) have runnable scaffolds in [`templates/`](../templates/) — clone one and start building instead of wiring boilerplate.
+
 ## 🟢 Beginner (Phases 0–3)
 - **CSV data tool** — CLI that cleans a CSV and outputs a JSON report.
 - **EDA notebook** — full exploratory analysis of a Kaggle dataset with insights + charts.

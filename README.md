@@ -92,6 +92,7 @@ docs/swe-to-ml.md           ← the SWE → ML/AI strategy: what to skip, levera
 docs/track-a-syllabus.md    ← 14-week week-by-week plan with daily tasks + deliverables
 docs/which-path.md          ← AI Engineer vs ML Engineer vs Data Scientist
 phases/00–10                ← reference modules (deep dives, checklists, resources, projects)
+templates/                  ← runnable starter code: LLM service, RAG app, AI agent
 projects/PROJECTS.md        ← portfolio projects by difficulty
 resources/RESOURCES.md      ← curated courses, books, channels, tools
 interview/PREP.md           ← ML/AI interview prep
